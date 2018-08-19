@@ -1,0 +1,11 @@
+.*swp
+*~
+.ipynb_checkpoints
+*.ipynb
+__pycache__
+*.tgz
+*.zip
+doc/
+data/
+log/log.txt
+ckpt/
