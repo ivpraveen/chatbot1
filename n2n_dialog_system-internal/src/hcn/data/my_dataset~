@@ -1,0 +1,24 @@
+1  	hi sir or madam, your due amoutn of $1000 had passed due date of 10th july on your home loan with wellsfargo please advise of when you can pay
+2 ok sorry i can pay by 15th july	may i take it as a promise
+3 yes please	i am on it
+4 <SILENCE>	api_call 15th july
+5 <SILENCE>	Thank you for cooperation
+6 no problem	buy
+
+1  	hi sir or madam, your due amoutn of $1200 had passed due date of 10th july on your credit card with wellsfargo please advise of when you can pay
+2 it looks like i missed by schedule	can you please comeup with a date by which you can pay
+3 i will pay by 16th july	may i take it as a promise
+4 yes you can	i am on it
+4 <SILENCE>	api_call 16th july
+5 <SILENCE>	Thank you for cooperation
+6 not a problem	buy
+
+1  	hi sir or madam, your due amoutn of $600 had passed due date of 5th july on your Education loan with wellsfargo please advise of when you can pay
+2 that is my bad	can you please comeup with a date by which you can pay
+3 can i pay next month	you will be charged with late fee 
+4 can you waver the late fee	fee is as per agreement i cant
+5 how much is the fee	when is your plan to may next instalment
+6 i will pay by 5th august let me check
+7 <SILENCE>	api_call get_fee 5th august
+8 ok i am good with that	Thank you for cooperation
+9 you are welcome	buy

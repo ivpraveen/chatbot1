@@ -1,0 +1,39 @@
+1 hi	hi sir this is to remind you on your loan payment
+2 i am bankrupt	sorry bank is not aware of it
+3 no problem	thank you for cooperation buy
+
+1 hello	hi sir or madam this is to remind you on your loan payment
+2 i lost my job	can you pay next month
+3 i may not be able to pay	do you want to reage your loan
+4 yes please	out bank representative office will get back to you
+5 thank you	you are welcome buy
+
+1 hello who is this	hi sir or madam this is to remind you on your loan payment
+2 i wll pay soon	thank you sir
+
+1 hello	hi sir or madam this is to remind you on your loan payment
+2 i cant pay this month	can you pay next month
+3 you i will	thank you sir
+
+1 hello	hi sir or madam this is to remind you on your loan payment
+2 i lost my job	when can you pay the installment
+3 i may not be able to pay for a while	do you need reage
+4 you plase	i will arrange for a call
+5 thank you	you are welcome buy
+
+1 hello	hi sir or madam this is to remind you on your loan payment
+2 i will pay tomorrow	we will consider this as promise
+3 sure	thank you for your support
+4 no problem	buy
+
+1 hi	hi sir or madam this is to remind you on your loan payment
+2 oh i forgot	can you please come up with a date by which you can pay
+3 i will pay by	ok i will take it as a promise
+4 ok	thank you for cooperation buy
+
+1 hi	hi sir or madam this is to remind you on your loan payment
+2 i will not be able to pay	may i know reason
+3 i lost my job	sorry to hear that when can we get back
+4 can you try next month	sure i would thank you for support
+5 ok no problem	thank you buy
+

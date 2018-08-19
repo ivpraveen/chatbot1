@@ -1,0 +1,7 @@
+1 null	hi sir or madam, your due amount of $1000 had passed due date of 10thjuly on your homeloan with mybank please advise on when you can pay
+2 ok sorry i can pay by 15thjuly	may i take it as a promise
+3 yes please	i am on it
+4 <SILENCE>	api_call 15thjuly
+5 <SILENCE>	Thank you for cooperation
+6 no problem	buy
+

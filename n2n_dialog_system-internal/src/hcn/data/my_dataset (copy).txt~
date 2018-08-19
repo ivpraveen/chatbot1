@@ -1,0 +1,35 @@
+1 null	hi sir or madam, your due amount of $1000 had passed due date of 10thjuly on your homeloan with mybank please advise on when you can pay
+2 ok sorry i can pay by 15thjuly	may i take it as a promise
+3 yes please	i am on it
+4 <SILENCE>	api_call 15thjuly
+5 <SILENCE>	Thank you for cooperation
+6 no problem	buy
+
+1 null	hi sir or madam, your due amount of $1200 had passed due date of 10thjuly on your creditcard with mybank please advise on when you can pay
+2 it looks like i missed by schedule	can you please come up with a date by which you can pay
+3 i will pay by 16thjuly	may i take it as a promise
+4 yes you can	i am on it
+5 <SILENCE>	api_call 16thjuly
+6 <SILENCE>	Thank you for cooperation
+7 not a problem	buy
+
+1 null	hi sir or madam, your due amount of $600 had passed due date of 05thjuly on your educationloan with mybank please advise on when you can pay
+2 that is my bad	can you please come up with a date by which you can pay
+3 can i pay next month	you will be charged with late fee 
+4 can you waiver the late fee	fee is as per agreement i cant waiver
+5 how much is the fee	when is your plan to make next instalment
+6 i will pay by 05thaugust	let me check
+7 <SILENCE>	api_call get_fee 05thaugust
+8 ok i am good with that	Thank you for cooperation
+9 you are welcome	buy
+
+1 null	hi sir or madam, your due amount of $1000 had passed due date of 10thjuly on your homeloan with mybank please advise on when you can pay
+2 i am bankrupt	bank is not having that information sorry for calling
+3 no problem	Thank you for cooperation buy
+
+1 null	hi sir or madam, your due amount of $1200 had passed due date of 10thjuly on your creditcard with mybank please advise on when you can pay
+2 i lost my job	can you pay next month
+3 i may not be able to pay	do you want to reage your loan
+4 yes please	out bank representative office will get back to you
+5 thank you	you are welcome buy
+
