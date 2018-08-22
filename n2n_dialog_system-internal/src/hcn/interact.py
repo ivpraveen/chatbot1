@@ -1,4 +1,5 @@
 from modules.entities import EntityTracker
+#from entities import EntityTracker
 from modules.bow import BoW_encoder
 from  modules.lstm_net import LSTM_net
 from modules.embed import UtteranceEmbed
@@ -8,6 +9,9 @@ import modules.util as util
 
 import numpy as np
 import sys
+
+
+#class InteractiveSession():
 
 
 class InteractiveSession():
@@ -32,20 +36,20 @@ class InteractiveSession():
         self.net.restore()
 
 
-    def interact(self):
+    def interact(self,input):
         # create entity tracker
-        et = EntityTracker()
+        #et = EntityTracker()
         # create action tracker
-        at = ActionTracker(et)
+        #at = ActionTracker(et)
         # reset network
-        self.net.reset_state()
+        #self.net.reset_state()
 
         # begin interaction loop
-        while True:
+        #while True:
 
             # get input from user
-            u = input(':: ')
-
+            #u = input(':: ')
+            u = input
             # check if user wants to begin new session
             if u == 'clear' or u == 'reset' or u == 'restart':
                 self.net.reset_state()
@@ -54,8 +58,9 @@ class InteractiveSession():
                 print('')
 
             # check for exit command
-            elif u == 'exit' or u == 'stop' or u == 'quit' or u == 'q':
-                break
+            #elif u == 'exit' or u == 'stop' or u == 'quit' or u == 'q':
+                #break
+                
 
             else:
                 # ENTER press : silence
@@ -74,11 +79,12 @@ class InteractiveSession():
 
                 # forward
                 prediction = self.net.forward(features, action_mask)
-                print('>>', self.action_templates[prediction])
+                #print('>>', self.action_templates[prediction])
+                return self.action_templates[prediction]
 
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     # create interactive session
     isess = InteractiveSession()
     # begin interaction
-    isess.interact()
+    isess.interact()'''
