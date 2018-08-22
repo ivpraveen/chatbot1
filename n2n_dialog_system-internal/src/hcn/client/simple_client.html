@@ -12,7 +12,8 @@
 <script type="text/javascript">
     function api_call(input) {
         $.ajax({
-            url: "http://0.0.0.0:5000/api",
+            crossOrigin: true,
+            url: "https://35.200.253.236:5000/api",
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(input),

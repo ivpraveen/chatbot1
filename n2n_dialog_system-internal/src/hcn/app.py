@@ -8,7 +8,6 @@ from flask_cors import CORS
 import interact
 
 
-
 # define the app
 app = Flask(__name__)
 CORS(app) # needed for cross-domain requests, allow everything by default
@@ -21,8 +20,8 @@ if 'DYNO' in os.environ:
 
 
 # load the model
-model = interact.InteractiveSession()
-model_api = model.interact( input_data)
+model_api = interact.InteractiveSession()
+#model_api = model.interact(input_data)
 
 
 # API route
@@ -35,7 +34,7 @@ def api():
     """
     input_data = request.json
     app.logger.info("api_input: " + str(input_data))
-    output_data = model_api(input_data)
+    output_data = model_api.interact(input_data)
     app.logger.info("api_output: " + str(output_data))
     response = jsonify(output_data)
     return response

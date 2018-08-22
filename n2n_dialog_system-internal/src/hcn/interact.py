@@ -11,9 +11,6 @@ import numpy as np
 import sys
 
 
-#class InteractiveSession():
-
-
 class InteractiveSession():
 
     def __init__(self):
@@ -38,53 +35,53 @@ class InteractiveSession():
 
     def interact(self,input):
         # create entity tracker
-        #et = EntityTracker()
+        et = EntityTracker()
         # create action tracker
-        #at = ActionTracker(et)
+        at = ActionTracker(et)
         # reset network
-        #self.net.reset_state()
+        self.net.reset_state()
 
         # begin interaction loop
         #while True:
 
             # get input from user
             #u = input(':: ')
-            u = input
+        u = input
             # check if user wants to begin new session
-            if u == 'clear' or u == 'reset' or u == 'restart':
-                self.net.reset_state()
-                et = EntityTracker()
-                at = ActionTracker(et)
-                print('')
+        if u == 'clear' or u == 'reset' or u == 'restart':
+             self.net.reset_state()
+             et = EntityTracker()
+             at = ActionTracker(et)
+             print('')
 
             # check for exit command
             #elif u == 'exit' or u == 'stop' or u == 'quit' or u == 'q':
                 #break
                 
 
-            else:
-                # ENTER press : silence
-                if not u:
-                    u = '<SILENCE>'
+        else:
+           # ENTER press : silence
+            if not u:
+                u = '<SILENCE>'
 
                 # encode
-                u_ent = et.extract_entities(u)
-                u_ent_features = et.context_features()
-                u_emb = self.emb.encode(u)
-                u_bow = self.bow_enc.encode(u)
+            u_ent = et.extract_entities(u)
+            u_ent_features = et.context_features()
+            u_emb = self.emb.encode(u)
+            u_bow = self.bow_enc.encode(u)
                 # concat features
-                features = np.concatenate((u_ent_features, u_emb, u_bow), axis=0)
+            features = np.concatenate((u_ent_features, u_emb, u_bow), axis=0)
                 # get action mask
-                action_mask = at.action_mask()
+            action_mask = at.action_mask()
 
                 # forward
-                prediction = self.net.forward(features, action_mask)
+            prediction = self.net.forward(features, action_mask)
                 #print('>>', self.action_templates[prediction])
-                return self.action_templates[prediction]
+        return self.action_templates[prediction]
 
 
-'''if __name__ == '__main__':
+if __name__ == '__main__':
     # create interactive session
     isess = InteractiveSession()
     # begin interaction
-    isess.interact()'''
+    isess.interact()
